@@ -1,0 +1,13 @@
+{{#if visible}}
+    <tr>
+        <td>{{name}}</td>
+        <td>{{age}}</td>
+        <td>{{occupation}}</td>
+        <td>{{company}}</td>
+        <td><img src="/employee-images/{{imageUrl}}" height="50" alt="Picture of {{name}}"/></td>
+    </tr>
+{{else}}
+    <tr>
+        <td colspan="4">{{name}} has hidden their information.</td>
+    </tr>
+{{/if}}

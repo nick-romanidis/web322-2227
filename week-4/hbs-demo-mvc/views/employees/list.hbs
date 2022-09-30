@@ -1,0 +1,19 @@
+<h2>Employee List</h2>
+{{>navbar}}
+
+<table border='1'>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Occupation</th>
+        <th>Company</th>
+        <th>Picture</th>
+    </tr>
+    {{#each employees}}
+        {{>employee this}}
+    {{else}}
+        <tr>
+            <td colspan="4">There are no employees to show.</td>
+        </tr>
+    {{/each}}
+</table>
