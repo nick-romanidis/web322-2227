@@ -17,8 +17,8 @@ app.set("view engine", ".hbs");
 app.use(express.urlencoded({ extended: true }));
 
 // Define the connection to our Postgres instance 
-const sequelize = new sequelizeModule("vinjpiuy", "vinjpiuy", "n-QVUHZjKYfL3HWvqYzNIfiJYp5X9Z9V", {
-    host: "peanut.db.elephantsql.com",
+const sequelize = new sequelizeModule("database", "user", "password", {
+    host: "hostname",
     dialect: "postgres",
     port: 5432,
     dialectOptions: {
