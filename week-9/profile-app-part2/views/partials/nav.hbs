@@ -1,0 +1,13 @@
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        {{#if user}}
+        <li>Hello {{user.firstName}} {{user.lastName}}</li>
+        <li><a href="/user/logout">Logout</a></li>
+        {{else}}
+        <li><a href="/user/login">Login</a></li>
+        <li><a href="/user/register">Register</a></li>
+        {{/if}}
+    </ul>
+</nav>
